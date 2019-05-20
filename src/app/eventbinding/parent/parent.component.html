@@ -1,0 +1,10 @@
+<p>
+  Parent Component!
+  <br>
+  Name : {{name}}
+ 
+</p>
+<div>
+  Child Component:
+  <app-child [sendname]="name" (brodcastname)="nameupdated($event)"></app-child>
+</div>

@@ -1,0 +1,14 @@
+<div>
+  <h3>Pipe Example</h3>
+  {{ salary | currency:'INR'}}
+  <br>
+   {{friend | uppercase}}
+   <br>
+   {{birthday | date:'short'}}
+</div>
+<hr>
+<h3>custom Pipes</h3>
+
+scores (without sort) : {{scores}}
+<br>
+scores (sorted) : {{scores |sortnumber : args}}

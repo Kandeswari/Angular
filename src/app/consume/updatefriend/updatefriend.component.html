@@ -1,0 +1,18 @@
+<form #friendform = "ngForm" (ngSubmit)="updateFriend(friendform.value)">
+  <fieldset>
+    <legend>Update Friend</legend>
+    <label>Name : </label>
+    <input type="text" [(ngModel)] ="name" name="name">
+    <br>
+    <br>
+    <label>Location : </label>
+    <input type="text" [(ngModel)] ="location" name="location">
+    <br>
+    <br>
+    <label>years : </label>
+    <input type="text" [(ngModel)] ="years" name="years">
+    <br>
+    <br>
+    <button type="submit">Update Friend</button>
+  </fieldset>
+</form>

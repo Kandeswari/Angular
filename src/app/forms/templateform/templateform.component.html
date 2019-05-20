@@ -1,0 +1,22 @@
+<div>
+  Template Driven Form:
+  <div>
+    <br>
+    <form #hobbyform="ngForm" (ngsubmit)="getFormData(hobbyform.value)">
+      First Name:<input type="text" name="firstName" [(ngModel)]="firstName" required>{{firstName}}
+      <br>
+      Last Name:<input type="text" name="lastname" [(ngModel)]="lastname">{{lastname}}
+      <br>
+      <select name="fun" [(ngModel)] = "hobby">
+        <option value="playing" >Playing</option>
+        <option value="drawing" >Drawing</option>
+      </select>
+      
+      <button type="submit">Submit</button>
+      
+    </form>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,34 @@
+{
+  "all": [
+    {
+      "id": 2,
+      "name": "R",
+      "location": "Banglore",
+      "years": 45
+    },
+    {
+      "id": 3,
+      "name": "DD",
+      "location": "Banglore",
+      "years": 45
+    },
+    {
+      "name": "AA",
+      "location": "TT",
+      "years": "22",
+      "id": 4
+    },
+    {
+      "name": "fggd",
+      "location": "fdgdf",
+      "years": "5",
+      "id": 5
+    },
+    {
+      "name": "dsfdsfsd",
+      "location": "Chennai",
+      "years": "13",
+      "id": 6
+    }
+  ]
+}

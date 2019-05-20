@@ -1,0 +1,18 @@
+<div>
+  Reactive Form:
+  <br>
+  <br>
+  <form [formGroup]="reactiveform" (ngSubmit)="getFormData(reactiveform.value)">
+ First Name : <input type="text" formControlName="fname" >
+ <br>
+ Last  Name : <input type="text" formControlName="lname" >
+ <br>
+ Hobby:
+ <select formControlName="hobby">
+   <option value="Playing">Playing</option>
+   <option value="Swimming">Swimming</option>
+
+ </select>
+ <button type="submit" [disabled]=!reactiveform.valid>Submit</button>
+  </form>
+</div>

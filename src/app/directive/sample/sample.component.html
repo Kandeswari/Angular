@@ -1,0 +1,37 @@
+Using ngFor directive:
+<ul>
+  <li *ngFor="let s of score; let counter=index "> {{ s}} at {{ counter }} position</li>
+</ul>
+<div>
+  Locations:
+  <table border="1">
+    <tr *ngFor="let loc of locations">
+      <td>{{loc.city}}</td>
+      <td>{{loc.code}}</td>
+    </tr>
+  </table>
+</div>
+<hr>
+<div>
+  Demo of ngIf directive:
+  <button (click) ="toggle()"> ngf</button>
+  <div style="background-color: aqua;width:100px">fdgdf</div>
+</div>
+<hr>
+<div>
+    Demo of ngIf directive with else criteria:
+    <button (click) ="toggle()"> ngf</button>
+    <div *ngIf="display; else nodisply" style="background-color: aqua;width:100px">fdgdf</div>
+  <ng-template #nodisplay>
+    <div style="background-color: brown";width:50px;height:50px>
+    </div>
+  </ng-template>
+  </div>
+  <div>
+    demo of ngswitch:
+    <div [ngSwitch] = "friend">
+      <span *ngSwitchCase="'prafful'">PD</span>
+      <span *ngSwitchCase="'Shen'">SH</span>
+      <span *ngSwitchDefault>Mickey</span>
+    </div>
+  </div>

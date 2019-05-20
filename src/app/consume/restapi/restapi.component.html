@@ -1,0 +1,54 @@
+<div>
+  <table border=1>
+    <tr>
+      <td>Id</td>
+      <td>name</td>
+      <td>location</td> 
+      <td>years</td>  
+        
+    </tr>
+    <tr *ngFor="let u of users">
+      <td>{{u.id}}</td>
+      <td>{{u.name | uppercase}}</td>
+      <td>{{u.location}}</td>
+      <td>{{u.years}}</td>
+  <button (click)="DeleteFriend(u.id)" type="submit">Delete</button>
+  <button (click)="UpdateFriend(u.id)" type="submit">Update</button>
+  <button (click)="UpdateFriendSPA(u.id)" type="submit">UpdateFriendSPA</button>
+    </tr>
+    
+    
+  </table>
+</div>
+<br>
+<div>
+  <div>
+    <button (click)="displayFormNow()" [disabled]="displayForm">{{ buttonlabel }}</button>
+  </div>
+</div>
+<br>
+<div *ngIf=displayForm>
+<form #friendform = "ngForm" (ngSubmit)="saveFriend(friendform.value)">
+  <fieldset>
+    <legend>Add New Friend</legend>
+    <label>Name : </label>
+    <input type="text" [(ngModel)] ="Name" name="name">
+    <br>
+    <br>
+    <label>Location : </label>
+    <input type="text" [(ngModel)] ="location" name="location">
+    <br>
+    <br>
+    <label>years : </label>
+    <input type="text" [(ngModel)] ="years" name="years">
+    <br>
+    <br>
+    <button type="submit">Add New Friend</button>
+  </fieldset>
+</form>
+</div>
+<div>
+
+</div>
+
+
